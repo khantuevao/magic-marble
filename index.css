@@ -61,7 +61,7 @@ header {
   border-radius: 10rem;
 }
 
-#company-header > div {
+#company-name {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,7 +110,7 @@ header {
 }
 
 /*Header wide-screen styling*/
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   header {
     height: 5rem;
   }
@@ -127,6 +127,18 @@ header {
   #right-links > a {
     font-size: 1.4rem;
   }
+}
+
+/*Header mobile styling*/
+@media (max-width: 1200px) {
+  #company-name {
+    display: none;
+  }
+
+  #center-links {
+    display: none;
+  }
+
 }
 
 /*Footer styling*/
@@ -183,7 +195,6 @@ footer {
 
 #video-box {
   position: relative;
-  height: auto;
   width: 100%;
   overflow: hidden;
 }
@@ -203,7 +214,11 @@ video {
   right: 0;
 }
 
-#lets-play {
+#text-over-video > p {
+  text-align: center;
+}
+
+#text-over-video > a {
   font-size: 1.8rem;
   font-family: SGL;
   border-radius: 5rem;
@@ -213,6 +228,7 @@ video {
   border-color: black;
   opacity: 0.7;
   text-decoration: none;
+  margin-top: 1rem;
 }
 
 #overview,
@@ -227,7 +243,7 @@ video {
   color: white;
   padding: 0 2rem 2rem;
   margin-top: 1rem;
-  box-shadow: 0 -5rem 5rem 4em black;
+  box-shadow: 0 -5rem 5rem 5rem black;
 }
 
 #overview > div {
@@ -323,7 +339,7 @@ li > div:last-child {
 
   #text-over-video {
     font-size: 4rem;
-    top: 10rem;
+    top: 17vh;
   }
 
   #overview {
@@ -390,4 +406,25 @@ li > div:last-child {
     font-family: SGL;
     font-size: 1.6rem;
   }
+}
+
+/*Content mobile styling*/
+@media (max-width: 1200px) {
+  #video-box {
+    height: 95vh;
+    width: 100%;
+  }
+
+  video {
+   width: auto;
+  }
+
+  #text-over-video {
+    font-size: 2.5rem;
+    top: 17vh;
+  }
+
+ 
+
+  
 }
