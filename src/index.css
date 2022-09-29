@@ -1,21 +1,21 @@
 @font-face {
   font-family: SGL;
-  src: url(../src/fonts/spacegrotesk/SpaceGrotesk-Light.otf);
+  src: url(../dist/fonts/spacegrotesk/SpaceGrotesk-Light.otf);
 }
 
 @font-face {
   font-family: SGM;
-  src: url(../src/fonts/spacegrotesk/SpaceGrotesk-Medium.otf);
+  src: url(../dist/fonts/spacegrotesk/SpaceGrotesk-Medium.otf);
 }
 
 @font-face {
   font-family: SGB;
-  src: url(../src/fonts/spacegrotesk/SpaceGrotesk-Bold.otf);
+  src: url(../dist/fonts/spacegrotesk/SpaceGrotesk-Bold.otf);
 }
 
 @font-face {
   font-family: SGR;
-  src: url(../src/fonts/spacegrotesk/SpaceGrotesk-Regular.otf);
+  src: url(../dist/fonts/spacegrotesk/SpaceGrotesk-Regular.otf);
 }
 
 html {
@@ -334,12 +334,12 @@ li > div:last-child {
 @media (min-width: 1200px) {
   #video-box {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
   }
 
   #text-over-video {
     font-size: 4rem;
-    top: 17vh;
+    top: 20vh;
   }
 
   #overview {
