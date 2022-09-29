@@ -63,24 +63,27 @@ header {
   justify-content: center;
 }
 
-#left-links {
+#center-links {
   display: flex;
   gap: 2rem;
   margin-left: 2rem;
 }
 
-#left-links > a {
+#center-links > a {
   text-decoration: none;
   font-family: SGM;
   font-size: 1rem;
   color: white;
+  border-bottom: 1px solid black;
+
 }
 
 #right-links {
   display: flex;
   gap: 0.5rem;
 }
-#right-links > button {
+
+#right-links > a {
   border: none;
   border-radius: 0.5rem;
   padding: 0.5rem 0.8rem;
@@ -88,15 +91,18 @@ header {
   background-color: #292524;
   color: #fafaf9;
 }
-#right-links > button:last-child {
+
+#right-links > a:last-child {
   background-color: #fafaf9;
 }
-#right-links > button > a {
+
+#right-links > a {
   text-decoration: none;
   color: #fafaf9;
   font-size: 1rem;
 }
-#right-links > button:last-child > a {
+
+#right-links > a:last-child {
   color: black;
 }
 
@@ -115,15 +121,12 @@ footer {
 #footer-logos {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 #footer-logos > img {
   transition: 0.4s;
-  width: 2rem;
+  width: 1.8rem;
   cursor: pointer;
-}
-#footer-logos > img:hover {
-  transform: translateY(-5px);
 }
 
 #company-footer {
