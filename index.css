@@ -121,17 +121,17 @@ footer {
 #footer-logos {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 #footer-logos > img {
   transition: 0.4s;
-  width: 1.8rem;
+  width: 1.5rem;
   cursor: pointer;
 }
 
 #company-footer {
   font-family: SGB;
-  font-size: 1.4rem;
+  font-size: 1.2em;
   text-decoration: none;
   color: white;
 }
