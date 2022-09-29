@@ -1,0 +1,140 @@
+@font-face {
+  font-family: SGL;
+  src: url(../src/fonts/spacegrotesk/SpaceGrotesk-Light.otf);
+}
+
+@font-face {
+  font-family: SGM;
+  src: url(../src/fonts/spacegrotesk/SpaceGrotesk-Medium.otf);
+}
+
+@font-face {
+  font-family: SGB;
+  src: url(../src/fonts/spacegrotesk/SpaceGrotesk-Bold.otf);
+}
+
+@font-face {
+  font-family: SGR;
+  src: url(../src/fonts/spacegrotesk/SpaceGrotesk-Regular.otf);
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/*Header styling*/
+header {
+  gap: 0.5rem;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-bottom: 1px solid #292524;
+  background-color: black;
+}
+
+#company-header {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 0rem;
+  font-family: SGB;
+  color: white;
+  text-decoration: none;
+}
+
+#company-header > img {
+  width: 3rem;
+  border-radius: 10rem;
+}
+
+#company-header > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#left-links {
+  display: flex;
+  gap: 2rem;
+  margin-left: 2rem;
+}
+
+#left-links > a {
+  text-decoration: none;
+  font-family: SGM;
+  font-size: 1rem;
+  color: white;
+}
+
+#right-links {
+  display: flex;
+  gap: 0.5rem;
+}
+#right-links > button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  font-family: SGM;
+  background-color: #292524;
+  color: #fafaf9;
+}
+#right-links > button:last-child {
+  background-color: #fafaf9;
+}
+#right-links > button > a {
+  text-decoration: none;
+  color: #fafaf9;
+  font-size: 1rem;
+}
+#right-links > button:last-child > a {
+  color: black;
+}
+
+/*Footer styling*/
+footer {
+  padding: 0.5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: black;
+  border-top: 1px solid #292524;
+}
+
+#footer-logos {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#footer-logos > img {
+  transition: 0.4s;
+  width: 2rem;
+  cursor: pointer;
+}
+#footer-logos > img:hover {
+  transform: translateY(-5px);
+}
+
+#company-footer {
+  font-family: SGB;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: white;
+}
+
+/*Body styling*/
+#container {
+  height: 100vh;
+  color: white;
+}
